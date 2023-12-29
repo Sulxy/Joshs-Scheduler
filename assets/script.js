@@ -18,7 +18,7 @@ $(function () {
   // Apply the past, present, or future class to each time block
   $(".time-block").each(function () {
     var timeBlockId = $(this).attr("id");
-    var currentHour = dayjs().format("H");
+    var currentHour = parseInt(dayjs().format("H")); // Use parseInt to convert currentHour to an integer
     var timeBlockHour = parseInt(timeBlockId.split("-")[1]);
 
     if (timeBlockHour < currentHour) {
