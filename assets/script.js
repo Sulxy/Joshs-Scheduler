@@ -13,10 +13,10 @@ $(function () {
     localStorage.setItem(timeBlockId, userInput);
   });
 
-  // Apply the past, present, or future class to each time block
+  // Apply the past, present, or future class to each time block and and uses parseInt to convert currentHour and timeBlockHour to an integer
   $(".time-block").each(function () {
     var timeBlockId = $(this).attr("id");
-    var currentHour = parseInt(dayjs().format("H")); // Use parseInt to convert currentHour to an integer
+    var currentHour = parseInt(dayjs().format("H")); // 
     var timeBlockHour = parseInt(timeBlockId.split("-")[1]);
 
     if (timeBlockHour < currentHour) {
