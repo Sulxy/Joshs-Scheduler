@@ -8,7 +8,7 @@ This scheduler is useful for planning out your day. It highlight the current hou
 
 
 ## Link to Website
-
+https://sulxy.github.io/Joshs-Scheduler/
 
 ## Credits 
 
